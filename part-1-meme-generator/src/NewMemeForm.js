@@ -21,7 +21,10 @@ const NewMemeForm = ({ addMeme }) => {
   const handleChange = (evt) => {
     const { name, value } = evt.target;
     // spread the previous formData, and add name/value pairs to it
-    setFormData((formData) => ({ ...formData, [name]: value }));
+    setFormData((formData) => ({
+      ...formData,
+      [name]: value,
+    }));
   };
 
   return (
